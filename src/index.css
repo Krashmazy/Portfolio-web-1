@@ -1,13 +1,79 @@
 body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #000000;
+  --form-background-color: #ffffff;
+  --button-background-color: #ffffff;
+  --button-text-color: #ffffff;
+  --input-background-color: #f0f4f8;
+  --input-border-color: #ccc;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --header-background-color: #ffffff;
+  --header-text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --form-background-color: #1e1e1e;
+  --button-background-color: #6200ee;
+  --button-text-color: #ffffff;
+  --input-background-color: #2e2e2e;
+  --input-border-color: #444;
+  --box-shadow: rgba(255, 255, 255, 0.1);
+  --header-background-color: #1e1e1e;
+  --header-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+}
+
+.contact {
+  background-color: var(--background-color);
+}
+
+.contact .contact-form {
+  background-color: var(--form-background-color);
+  box-shadow: 0 4px 8px var(--box-shadow);
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  background-color: var(--input-background-color);
+  border: 1px solid var(--input-border-color);
+}
+
+.contact .contact-form button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+}
+
+.contact .contact-item {
+  background-color: var(--form-background-color);
+  box-shadow: 0 4px 8px var(--box-shadow);
 }

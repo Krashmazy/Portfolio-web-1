@@ -1,0 +1,31 @@
+.blog {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.blog.dark-mode {
+    background: #333;
+    color: white;
+}
+
+.blog h2 {
+    text-align: center;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.blog.dark-mode h2 {
+    color: white;
+}
+
+.blog p {
+    text-align: center;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.blog.dark-mode p {
+    color: white;
+}
